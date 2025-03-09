@@ -21,16 +21,8 @@ const { heading, description } = page.data;
             <p>{description}</p>
         </div>
 
-        <!-- <section id="cv">
-            <h2>Mon CV</h2>
-            <button
-                class="bg-zinc-950 px-4 py-2 rounded-xl text-white font-semibold transition cursor-pointer hover:bg-zinc-800"
-                >Télécharger</button
-            >
-        </section> -->
-
         <section id="projects">
-            <h2>Mes projets</h2>
+            <h2>Studio de projets</h2>
             <div class="grid gap-5 grid-cols-1 md:grid-cols-2">
                 {
                     sortedProjects.map((project) => (
@@ -54,7 +46,7 @@ const { heading, description } = page.data;
         </section>
 
         <section id="annex">
-            <h2>Autres projets</h2>
+            <h2>Autres travaux</h2>
             <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {
                     annex.map((item) => (

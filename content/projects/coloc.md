@@ -24,3 +24,5 @@ Le choix de n’avoir qu’un appartement par étage a notamment été motivé p
 - [Plan étage courant](/portfolio/pdf/VIAUD_Alice_étage_courant.pdf)
 - [Coupe et élévation](/portfolio/pdf/VIAUD_Alice_façade_coupe.pdf)
 - [Détail](/portfolio/pdf/VIAUD_Alice_planche_détail.pdf)
+
+![Photo maquette](/portfolio/img/coloc-2.jpg)
