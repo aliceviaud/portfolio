@@ -2,7 +2,7 @@
 title: "Ajouter pour réparer"
 program: "Immeuble collocatif pour étudiants"
 date: "2024-12-18"
-image: "/img/maquette-2.jpg"
+image: "/img/coloc-2.jpg"
 site: "Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble"
 ---
 
@@ -17,4 +17,3 @@ Le traitement des façades traduit une réflexion sur l’équilibre entre ouver
 Chaque niveau accueille un appartement conçu pour favoriser la vie en communauté et le partage entre étudiants, tout en préservant des espaces d’intimité. L’organisation intérieure s’articule autour de 12 chambres, 6 blocs de salles de bain et un vaste séjour situé à l’ouest. Pour préserver l’intimité des étudiants, les entrées des chambres sont disposées en retrait, évitant ainsi tout vis-à-vis direct avec l’espace commun. Cette configuration assure un équilibre entre vie collective et sphère privée, tout en participant à la qualité d’usage des logements.
 
 Le choix de n’avoir qu’un appartement par étage a notamment été motivé par la volonté de proposer à tous les résidents l’accès aux grandes loggias orientées plein sud. Ces espaces aménagés à l’extrémité de l’immeuble constituent des lieux de détente et de convivialité, offrant à chaque étudiant un confort de vie et un cadre propice aux échanges. 
-
