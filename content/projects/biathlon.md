@@ -2,7 +2,7 @@
 title: "À la croisée des pistes"
 program: "Pavillon adapté à la pratique d’une discipline olympique"
 date: "2024-05-17"
-image: "/img/biathlon.png"
+image: "/portfolio/img/biathlon.png"
 site: "Rue de la piscine : pelouse ouverte à côté du stade de foot n°2 et de l’anneau d’athlétisme, le long des berges de l’Isère, à l’est du campus universitaire de Grenoble"
 ---
 Le projet consiste à concevoir un pavillon d’environ 120 à 150 m² qui exprime une vision architecturale intégrée dans le campus universitaire de Grenoble, tout en en mettant en relation la masse et l’ossature. Ce pavillon devra également offrir un cadre adapté à la pratique d’une discipline olympique, au vue du site retenu, mon choix s’est dans mon cas porté vers le biathlon. 

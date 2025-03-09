@@ -23,7 +23,7 @@ const { Content } = await render(page);
 <Layout>
     <Prose>
         <h1>{title}</h1>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} class="aspect-2/1 w-full object-cover object-start" />
         <Content />
     </Prose>
 </Layout>
