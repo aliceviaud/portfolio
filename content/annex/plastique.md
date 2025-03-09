@@ -10,3 +10,7 @@ category: "plastic"
   L'utilisation de fil à coudre, dont la fragilité renvoie au caractère éphémère du souvenir, illustre ces connexions inopinées qui parviennent parfois à faire ressurgir un détail des profondeurs de notre mémoire. 
 
 papier, carton plume, colle, aquarelle, fil à coudre
+
+
+![Photo 2](/portfolio/img/plastic1.jpg)
+![Photo 3](/portfolio/img/plastic3.jpg)
