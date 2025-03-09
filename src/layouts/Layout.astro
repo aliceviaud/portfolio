@@ -1,5 +1,10 @@
 ---
 import "../styles/global.css";
+
+const links = [
+    { href: "/portfolio/#projects", text: "Mes projets" },
+    { href: "/portfolio/#annex", text: "Autres projets" },
+];
 ---
 
 <!doctype html>
@@ -12,19 +17,15 @@ import "../styles/global.css";
         <title>Astro Basics</title>
     </head>
 
-    <body class="bg-zinc-100 p-4 max-w-7xl mx-auto">
-        <header class="max-w-2xl bg-white border rounded-full mx-auto p-3 mb-8 sticky top-4 border-zinc-200">
+    <body class="bg-zinc-100 p-4 pt-2 max-w-7xl mx-auto">
+        <header class="max-w-2xl bg-white border rounded-full mx-auto p-3 mb-8 sticky top-2 border-zinc-200 z-10">
             <nav class="mx-auto">
                 <ul class="flex justify-center space-x-4 text-zinc-600 text-sm font-semibold">
-                    <!-- <li>
-                        <a href="/portfolio/#cv">Mon CV</a>
-                    </li> -->
-                    <li>
-                        <a href="/portfolio/#projects">Mes projets</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio/#annex">Autres projets</a>
-                    </li>
+                    {links.map((link) => (
+                        <li>
+                            <a class="transition hover:text-zinc-900" href={link.href}>{link.text}</a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
