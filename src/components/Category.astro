@@ -1,0 +1,34 @@
+---
+const { category } = Astro.props;
+
+function getClass(category: 'plastic' | 'digital' | 'photo') {
+    switch (category) {
+        case 'plastic':
+            return 'bg-red-100 text-red-600 border-red-300';
+        case 'digital':
+            return 'bg-blue-100 text-blue-600 border-blue-300';
+        case 'photo':
+            return 'bg-green-100 text-green-600 border-green-300';
+        default:
+            return 'bg-gray-100 text-gray-600 border-gray-300';
+    }
+}
+
+function getText(category: 'plastic' | 'digital' | 'photo') {
+    switch (category) {
+        case 'plastic':
+            return 'Plastique';
+        case 'digital':
+            return 'Digital';
+        case 'photo':
+            return 'Photo';
+        default:
+            return 'Autre';
+    }
+}
+
+---
+
+<p class={`h-fit rounded-full border px-3 py-1.5 text-sm font-semibold leading-none w-fit ${getClass(category)}`}>
+    { getText(category) }
+</p >

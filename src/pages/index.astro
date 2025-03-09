@@ -1,11 +1,78 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import Layout from "@/layouts/Layout.astro";
+import Prose from "@/components/Prose.astro";
+import Category from "@/components/Category.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const projects = await getCollection("projects");
+const annex = await getCollection("annex");
+
+const [page] = await getSinglePage("index");
+const { heading, description } = page.data;
 ---
 
 <Layout>
-	<Welcome />
+    <Prose>
+        <div class="text-center max-w-2xl mx-auto">
+            <h1 class="mb-0">{heading}</h1>
+            <p>{description}</p>
+        </div>
+
+        <!-- <section id="cv">
+            <h2>Mon CV</h2>
+            <button
+                class="bg-zinc-950 px-4 py-2 rounded-xl text-white font-semibold transition cursor-pointer hover:bg-zinc-800"
+                >Télécharger</button
+            >
+        </section> -->
+
+        <section id="projects">
+            <h2>Mes projets</h2>
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2">
+                {
+                    projects.map((project) => (
+                        <a
+                            href={`project/${project?.id}`}
+                            class="bg-white shadow rounded-xl no-underline transition hover:scale-[1.025] overflow-hidden"
+                        >
+                            <img
+                                src={project.data.image}
+                                alt={project.data.title}
+                                class="object-cover w-full !my-0 !rounded-none"
+                            />
+                            <div class="p-3">
+                                <h3 class="mt-0 mb-2">{project.data.title}</h3>
+                                <p class="mb-0">{project.data.program}</p>
+                            </div>
+                        </a>
+                    ))
+                }
+            </div>
+        </section>
+
+        <section id="annex">
+            <h2>Autres projets</h2>
+            <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                {
+                    annex.map((item) => (
+                        <a
+                            href={`annex/${item?.id}`}
+                            class="bg-white shadow rounded-xl no-underline transition hover:scale-[1.025] overflow-hidden"
+                        >
+                            <img
+                                src={item.data.image}
+                                alt={item.data.title}
+                                class="object-cover w-full !my-0 !rounded-none"
+                            />
+                            <div class="p-3">
+                                <h3 class="mt-0 mb-2">{item.data.title}</h3>
+                                <Category category={item.data.category}/>
+                            </div>
+                        </a>
+                    ))
+                }
+            </div>
+        </section>
+    </Prose>
 </Layout>

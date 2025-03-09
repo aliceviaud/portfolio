@@ -1,0 +1,29 @@
+---
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Prose from "@/components/Prose.astro";
+
+export async function getStaticPaths() {
+    const pages = await getSinglePage("projects");
+
+    const paths = pages.map((page) => ({
+        params: { id: page.id },
+        props: { page },
+    }));
+
+    return paths;
+}
+
+const { page } = Astro.props;
+const { title, image } = page.data;
+const { Content } = await render(page);
+---
+
+<Layout>
+    <Prose>
+        <h1>{title}</h1>
+        <img src={image} alt={title} />
+        <Content />
+    </Prose>
+</Layout>
