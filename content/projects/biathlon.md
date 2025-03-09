@@ -14,4 +14,4 @@ Enfin la structure du bâtiment a été enrichie par un jeu de double hauteur pe
 
 ## Documents graphiques
 - [Plan RDC](/portfolio/pdf/planrdc.pdf)
-- [Organigramme](/portfolio/pdf/organigramme.pdf)
+- ![Organigramme](/portfolio/pdf/organigramme.pdf)
