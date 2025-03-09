@@ -2,8 +2,8 @@
 import "../styles/global.css";
 
 const links = [
-    { href: "/portfolio/#projects", text: "Mes projets" },
-    { href: "/portfolio/#annex", text: "Autres projets" },
+    { href: "/portfolio/#projects", text: "Studio de projets" },
+    { href: "/portfolio/#annex", text: "Autres travaux" },
 ];
 ---
 
@@ -26,6 +26,9 @@ const links = [
                             <a class="transition hover:text-zinc-900" href={link.href}>{link.text}</a>
                         </li>
                     ))}
+                    <li>
+                        <a class="transition hover:text-zinc-900" href="/portfolio/pdf/cv.pdf">CV</a>
+                    </li>
                 </ul>
             </nav>
         </header>
