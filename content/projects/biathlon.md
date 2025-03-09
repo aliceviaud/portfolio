@@ -10,3 +10,8 @@ Le projet consiste à concevoir un pavillon d’environ 120 à 150 m² qui expri
 Discipline à la croisée de deux pratiques sportives, le biathlon se singularise des autres disciplines olympiques par sa dimension hybride. J’ai voulu représenter dans mon projet cet aspect par la relation entre la masse et l’ossature : ces dernières s’articulent dans un mouvement d’intersection, symbolisant ainsi la rencontre entre les deux sports tout en évoquant la forme du viseur de la carabine. La croix a été orientée de telle façon à créer un axe de circulation entre la digue et la piste d’athlétisme, mettant ainsi en relation les éléments déjà présents sur le site tout en permettant l’accès aux différents pas de tirs. 
 
 Enfin la structure du bâtiment a été enrichie par un jeu de double hauteur permettent d’accentuer les références spatiales propres au biathlon : la position debout et couché du tireur.
+
+
+## Documents graphiques
+- [Plan RDC](/portfolio/pdf/planrdc.pdf)
+- [Organigramme](/portfolio/pdf/organigramme.pdf)
