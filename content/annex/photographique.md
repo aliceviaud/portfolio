@@ -1,5 +1,5 @@
 ---
-title: "L'image de Grenoble"
+title: "L'image de la ville"
 image: "/portfolio/img/Grenoble1.jpg"
 category: "photo"
 ---
