@@ -20,3 +20,7 @@ Le choix de n’avoir qu’un appartement par étage a notamment été motivé p
 
 ## Documents graphiques
 - [Plan masse](/portfolio/pdf/VIAUD_Alice_plan_masse.pdf)
+- [Plan RDC](/portfolio/pdf/VIAUD_Alice_plan_rdc.pdf)
+- [Plan étage courant](/portfolio/pdf/VIAUD_Alice_étage courant.pdf)
+- [Coupe et élévation](/portfolio/pdf/VIAUD_Alice_façade_coupe.pdf)
+- [Détail](/portfolio/pdf/VIAUD_Alice_planche_détail.pdf)
