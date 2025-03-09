@@ -1,7 +1,7 @@
 ---
 title: "Ajouter pour réparer"
 program: "Immeuble collocatif pour étudiants"
-date: "2024-12-18"
+order: 1
 image: "/portfolio/img/coloc-2.jpg"
 site: "Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble"
 ---

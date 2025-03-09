@@ -6,6 +6,8 @@ import Prose from "@/components/Prose.astro";
 import Category from "@/components/Category.astro";
 
 const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
+
 const annex = await getCollection("annex");
 
 const [page] = await getSinglePage("index");
@@ -31,7 +33,7 @@ const { heading, description } = page.data;
             <h2>Mes projets</h2>
             <div class="grid gap-5 grid-cols-1 md:grid-cols-2">
                 {
-                    projects.map((project) => (
+                    sortedProjects.map((project) => (
                         <a
                             href={`/portfolio/project/${project?.id}`}
                             class="bg-white shadow rounded-xl no-underline transition hover:scale-[1.025] overflow-hidden"
