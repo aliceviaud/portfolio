@@ -1,6 +1,6 @@
 ---
 title: "Entrelac de souvenirs"
-image: "/portfolio/plastic2.jpg"
+image: "/portfolio/img/plastic2.jpg"
 category: "plastic"
 ---
  Cette œuvre explore la thématique des souvenirs et des différentes formes par lesquelles ces derniers se manifestent dans notre mémoire.
