@@ -1,6 +1,6 @@
 ---
 title: "À la croisée des pistes"
-program: "Pavillon adapté à la pratique du biathlon"
+program: "Pavillon consacré à la pratique du biathlon"
 order: 2
 image: "/portfolio/img/biathlon.png"
 site: "Rue de la piscine : pelouse ouverte à côté du stade de foot n°2 et de l’anneau d’athlétisme, le long des berges de l’Isère, à l’est du campus universitaire de Grenoble"
@@ -14,4 +14,4 @@ Enfin la structure du bâtiment a été enrichie par un jeu de double hauteur pe
 
 ## Documents graphiques
 - [Plan RDC](/portfolio/pdf/planrdc.pdf)
-- ![Organigramme](/portfolio/pdf/organigramme.pdf)
+- [Organigramme](/portfolio/pdf/organigramme.pdf)
