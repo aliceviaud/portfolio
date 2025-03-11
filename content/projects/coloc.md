@@ -7,7 +7,8 @@ site: "Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village o
 ---
 
 **site:** Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble
-**program:** "Immeuble de collocations pour étudiants"
+
+**programme:** Immeuble de collocations pour étudiants
 
 Le projet s’inscrit dans une démarche de continuité avec le tissu urbain existant, en prenant appui sur les lignes directrices des bâtiments préexistants. L’implantation de l’immeuble vient compléter l’angle formé par la rue de Stalingrad et la rue Alfred de Vigny, en prolongeant l’alignement du bloc résidentiel situé au nord de la parcelle.
 
