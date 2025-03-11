@@ -6,7 +6,10 @@ images: ["/portfolio/img/coloc-2.jpg", /portfolio/img/coloc-1.jpg]
 site: "Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble"
 ---
 
-Le projet s’inscrit dans une démarche de continuité avec le tissu urbain existant, en prenant appui sur les lignes directrices des bâtiments préexistants. L’implantation de l’immeuble vient compléter l’angle formé par la rue de Stalingrad et la rue Alfred de Vigne, en prolongeant l’alignement du bloc résidentiel situé au nord de la parcelle.
+**site:** Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble
+**program:** "Immeuble de collocations pour étudiants"
+
+Le projet s’inscrit dans une démarche de continuité avec le tissu urbain existant, en prenant appui sur les lignes directrices des bâtiments préexistants. L’implantation de l’immeuble vient compléter l’angle formé par la rue de Stalingrad et la rue Alfred de Vigny, en prolongeant l’alignement du bloc résidentiel situé au nord de la parcelle.
 
 Afin d’éviter un vis-à-vis trop contraignant avec le bâti situé à l’est, un retrait de 12 mètres a été aménagé, donnant naissance à une voie piétonne bordée d’une enfilade d’arbres. Ce filtre végétal vient non seulement structurer l’espace, mais aussi renforcer l’intimité des résidences.
 
