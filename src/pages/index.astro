@@ -31,7 +31,7 @@ const { heading, description } = page.data;
                             class="bg-white shadow rounded-xl no-underline transition hover:scale-[1.025] overflow-hidden"
                         >
                             <img
-                                src={project.data.image}
+                                src={project.data.images[0]}
                                 alt={project.data.title}
                                 class="object-cover w-full !my-0 !rounded-none"
                             />
@@ -55,7 +55,7 @@ const { heading, description } = page.data;
                             class="bg-white shadow rounded-xl no-underline transition hover:scale-[1.025] overflow-hidden"
                         >
                             <img
-                                src={item.data.image}
+                                src={item.data.images[0]}
                                 alt={item.data.title}
                                 class="object-cover w-full !my-0 !rounded-none"
                             />

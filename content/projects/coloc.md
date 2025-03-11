@@ -2,7 +2,7 @@
 title: "Ajouter pour réparer"
 program: "Immeuble collocatif pour étudiants"
 order: 1
-image: "/portfolio/img/coloc-2.jpg"
+images: ["/portfolio/img/coloc-2.jpg", /portfolio/img/coloc-1.jpg]
 site: "Carrefour entre la rue Alfred de Vigny et la Rue de Stalingrad, Village olympique, Grenoble"
 ---
 
@@ -24,5 +24,3 @@ Le choix de n’avoir qu’un appartement par étage a notamment été motivé p
 - [Plan étage courant](/portfolio/pdf/VIAUD_Alice_étage_courant.pdf)
 - [Coupe et élévation](/portfolio/pdf/VIAUD_Alice_façade_coupe.pdf)
 - [Détail](/portfolio/pdf/VIAUD_Alice_planche_détail.pdf)
-
-![Photo maquette](/portfolio/img/coloc-1.jpg)

@@ -4,6 +4,7 @@ import { render } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Prose from "@/components/Prose.astro";
 import Category from "@/components/Category.astro";
+import Carousel from "@/components/Carousel.astro";
 
 export async function getStaticPaths() {
     const pages = await getSinglePage("annex");
@@ -17,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, image, category } = page.data;
+const { title, images, category } = page.data;
 const { Content } = await render(page);
 ---
 
@@ -27,7 +28,7 @@ const { Content } = await render(page);
             <h1>{title}</h1>
             <Category {category} />
         </div>
-        <img src={image} alt={title} />
+        {images.length > 1 ? <Carousel images={images} /> : <img src={images[0]} alt={title} class="w-full object-cover" />}
         <Content />
     </Prose>
 </Layout>

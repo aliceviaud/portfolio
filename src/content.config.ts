@@ -7,7 +7,7 @@ const projects = defineCollection({
         title: z.string(),
         program: z.string(),
         order: z.number(),
-        image: z.string(),
+        images: z.array(z.string()),
         site: z.string(),
     }),
 });
@@ -16,7 +16,7 @@ const annex = defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./content/annex" }),
     schema: z.object({
         title: z.string(),
-        image: z.string(),
+        images: z.array(z.string()),
         category: z.enum(["plastic", "photo", "digital"]),
     })
 })

@@ -3,6 +3,7 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { render } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Prose from "@/components/Prose.astro";
+import Carousel from "@/components/Carousel.astro";
 
 export async function getStaticPaths() {
     const pages = await getSinglePage("projects");
@@ -16,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, image, program } = page.data;
+const { title, images, program } = page.data;
 const { Content } = await render(page);
 ---
 
@@ -24,7 +25,7 @@ const { Content } = await render(page);
     <Prose>
         <h1 class="mb-2">{title}</h1>
         <p class="my-0!">{program}</p>
-        <img src={image} alt={title} class="aspect-2/1 w-full object-cover object-start" />
+        {images.length > 1 ? <Carousel images={images} /> : <img src={images[0]} alt={title} class="w-full object-cover" />}
         <Content />
     </Prose>
 </Layout>
