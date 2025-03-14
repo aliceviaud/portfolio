@@ -9,4 +9,4 @@ Dans son ouvrage Great Streets, Allan Jacobs explore les caractéristiques physi
 
 ## Série de diagrammes
 - [Morphologie urbaine de Venise](/portfolio/pdf/sanséchelle.pdf)
-- - [Morphologie urbaine d'Amsterdam](/portfolio/pdf/diagramme_urbain_Amsterdam.pdf)
+- [Morphologie urbaine d'Amsterdam](/portfolio/pdf/diagramme_urbain_Amsterdam.pdf)
