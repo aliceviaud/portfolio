@@ -4,9 +4,9 @@ images:
   - src: "/portfolio/img/Grenoble1.jpg"
     description: "landmark"
   - src: "/portfolio/img/Grenoble2.jpg"
-    description: "district"
-  - src: "/portfolio/img/Grenoble3.jpg"
     description: "path"
+  - src: "/portfolio/img/Grenoble3.jpg"
+    description: "district"
 category: "photo"
 ---
 
