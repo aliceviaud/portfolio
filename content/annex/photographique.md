@@ -2,11 +2,11 @@
 title: "L'image de la ville"
 images:
   - src: "/portfolio/img/Grenoble1.jpg"
-    description: "Description de l'image 1"
+    description: "landmark"
   - src: "/portfolio/img/Grenoble2.jpg"
-    description: "Description de l'image 2"
+    description: "district"
   - src: "/portfolio/img/Grenoble3.jpg"
-    description: "Description de l'image 3"
+    description: "path"
 category: "photo"
 ---
 
