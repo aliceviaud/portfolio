@@ -5,20 +5,17 @@ const { images } = Astro.props;
 
 <div class="relative w-full overflow-hidden">
     {
-        images.map((image: string, index: number) => (
+        images.map((image: { src: string; description?: string }, index: number) => (
             <div class={`carousel-item ${index === 0 ? "block" : "hidden"}`}>
-                <img src={image} alt={`Slide ${index + 1}`} class="w-full object-cover object-start" />
+                <img src={image.src} alt={`Slide ${index + 1}`} class="w-full mb-0 object-cover object-start" />
+                {image.description && <p class="mt-1 text-center italic opacity-75">{image.description}</p>}
             </div>
         ))
     }
-    <button
-        class="btn prev-button left-2"
-    >
+    <button class="btn prev-button left-2">
         <i data-lucide="chevron-left" class="size-7"></i>
     </button>
-    <button
-        class="btn next-button right-2"
-    >
+    <button class="btn next-button right-2">
         <i data-lucide="chevron-right" class="size-7"></i>
     </button>
 </div>
@@ -39,12 +36,12 @@ const { images } = Astro.props;
 
     document.querySelector(".prev-button")?.addEventListener("click", () => {
         console.log("prev button clicked");
-        goToItem(currentIndex + 1);
+        goToItem(currentIndex - 1);
     });
 
     document.querySelector(".next-button")?.addEventListener("click", () => {
         console.log("Next button clicked");
-        goToItem(currentIndex - 1);
+        goToItem(currentIndex + 1);
     });
 
     function goToItem(index: number) {

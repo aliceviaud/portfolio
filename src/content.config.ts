@@ -8,7 +8,12 @@ const projects = defineCollection({
     title: z.string(),
     program: z.string(),
     order: z.number(),
-    images: z.array(z.string()),
+    images: z.array(
+      z.object({
+        src: z.string(),
+        description: z.string().optional(),
+      }),
+    ),
     site: z.string(),
   }),
 });
@@ -17,7 +22,12 @@ const annex = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./content/annex" }),
   schema: z.object({
     title: z.string(),
-    images: z.array(z.string()),
+    images: z.array(
+      z.object({
+        src: z.string(),
+        description: z.string().optional(),
+      }),
+    ),
     category: z.enum(["plastic", "photo", "digital"]),
   }),
 });

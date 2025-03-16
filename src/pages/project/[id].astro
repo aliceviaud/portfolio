@@ -25,7 +25,16 @@ const { Content } = await render(page);
     <Prose>
         <h1 class="mb-2">{title}</h1>
         <p class="my-0!">{program}</p>
-        {images.length > 1 ? <Carousel images={images} /> : <img src={images[0]} alt={title} class="w-full object-cover" />}
+        {
+            images.length > 1 ? (
+                <Carousel images={images} />
+            ) : (
+                <div>
+                    <img src={images[0].src} alt={title} class="w-full object-cover mb-0" />
+                    {images[0].description && <p class="mt-1">{images[0].description}</p>}
+                </div>
+            )
+        }
         <Content />
     </Prose>
 </Layout>
