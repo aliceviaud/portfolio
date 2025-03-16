@@ -11,6 +11,7 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
 const annex = await getCollection("annex");
 
 const [education] = await getCollection("education");
+const [experience] = await getCollection("experience");
 
 const [page] = await getSinglePage("index");
 const { heading, description } = page.data;
@@ -83,6 +84,24 @@ const { heading, description } = page.data;
                                 <p class="m-0!">{item.diploma}</p>
                             </div>
                             {item.start} - {item.end ?? "Présent"}
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Expérience</h2>
+            <div class="flex flex-col gap-4">
+                {
+                    experience.data.map((item) => (
+                        <div class="flex items-center gap-4">
+                            <img src={item.image} alt="logo" class="max-w-48 p-4 bg-white my-0!" />
+                            <div class="flex-1">
+                                <h3 class="m-0!">{item.job}</h3>
+                                <p class="m-0!">{item.company}</p>
+                            </div>
+                            {item.period}
                         </div>
                     ))
                 }

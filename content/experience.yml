@@ -1,0 +1,4 @@
+- job: "Stage ouvrier"
+  company: "Charpentier des cimes"
+  period: "juin 2024"
+  image: "/portfolio/logo/charpentier-des-cimes.png"
