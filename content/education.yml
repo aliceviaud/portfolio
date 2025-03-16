@@ -1,0 +1,10 @@
+- diploma: "Licence d'architecture"
+  institution: "Ensag"
+  start: "2023"
+  image: "/portfolio/logo/ensag.png"
+
+- diploma: "Double L1 langues-gestion"
+  institution: "Université Lyon III"
+  start: "2022"
+  end: "2023"
+  image: "/portfolio/logo/lyon3.png"

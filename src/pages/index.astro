@@ -10,6 +10,8 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
 
 const annex = await getCollection("annex");
 
+const [education] = await getCollection("education");
+
 const [page] = await getSinglePage("index");
 const { heading, description } = page.data;
 ---
@@ -61,9 +63,27 @@ const { heading, description } = page.data;
                             />
                             <div class="p-3">
                                 <h3 class="mt-0 mb-2">{item.data.title}</h3>
-                                <Category category={item.data.category}/>
+                                <Category category={item.data.category} />
                             </div>
                         </a>
+                    ))
+                }
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Formation</h2>
+            <div class="flex flex-col gap-4">
+                {
+                    education.data.map((item) => (
+                        <div class="flex items-center gap-4">
+                            <img src={item.image} alt="logo" class="max-w-48 p-4 bg-white my-0!" />
+                            <div class="flex-1">
+                                <h3 class="m-0!">{item.institution}</h3>
+                                <p class="m-0!">{item.diploma}</p>
+                            </div>
+                            {item.start} - {item.end ?? "Présent"}
+                        </div>
                     ))
                 }
             </div>
