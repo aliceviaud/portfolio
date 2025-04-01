@@ -1,12 +1,6 @@
 ---
 import "../styles/global.css";
-
-const links = [
-    { href: "/portfolio/#projects", text: "Studio de projets" },
-    { href: "/portfolio/#annex", text: "Autres travaux" },
-    { href: "/portfolio/#education", text: "Formation" },
-    { href: "/portfolio/#experience", text: "Expérience" },
-];
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -20,24 +14,7 @@ const links = [
     </head>
 
     <body class="bg-zinc-100 p-4 pt-2 max-w-6xl mx-auto">
-        <header class="bg-white w-fit border rounded-full mx-auto py-3 px-9 mb-8 sticky top-2 border-zinc-200 z-10">
-            <nav class="mx-auto">
-                <ul class="flex justify-center space-x-4 text-zinc-600 text-sm font-semibold">
-                    {
-                        links.map((link) => (
-                            <li>
-                                <a class="transition hover:text-zinc-900" href={link.href}>
-                                    {link.text}
-                                </a>
-                            </li>
-                        ))
-                    }
-                    <li>
-                        <a class="transition hover:text-zinc-900" href="/portfolio/pdf/cv.pdf">CV</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <Header />
         <slot />
     </body>
 </html>

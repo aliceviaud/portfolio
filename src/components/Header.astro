@@ -1,0 +1,80 @@
+---
+const links = [
+    { href: "/portfolio/#projects", text: "Studio de projets" },
+    { href: "/portfolio/#annex", text: "Autres travaux" },
+    { href: "/portfolio/#education", text: "Formation" },
+    { href: "/portfolio/#experience", text: "Expérience" },
+];
+---
+
+<header class="bg-white sm:w-fit border rounded-full mx-auto mb-8 sticky top-2 border-zinc-200 z-20 px-9">
+    <nav class="mx-auto">
+        <ul class="hidden sm:flex justify-center space-x-4 text-zinc-600 text-sm font-semibold py-3">
+            {
+                links.map((link) => (
+                    <li>
+                        <a class="transition hover:text-zinc-900" href={link.href}>
+                            {link.text}
+                        </a>
+                    </li>
+                ))
+            }
+            <li>
+                <a class="transition hover:text-zinc-900" href="/portfolio/pdf/cv.pdf">CV</a>
+            </li>
+        </ul>
+        <div class="sm:hidden flex py-1">
+            <button class="text-zinc-600 rounded-lg p-1 hover:bg-zinc-100 cursor-pointer transition" id="hamburger">
+                <i data-lucide="menu" class="size-6"></i>
+            </button>
+            <div
+                id="menu"
+                class="hidden top-14 left-0 absolute bg-white border border-zinc-200 rounded-lg shadow-lg p-2"
+            >
+                {
+                    links.map((link) => (
+                        <a class="rounded-lg block py-2 px-4 hover:bg-zinc-100 link" href={link.href}>
+                            {link.text}
+                        </a>
+                    ))
+                }
+                <a class="block py-2 px-4 hover:bg-zinc-100" href="/portfolio/pdf/cv.pdf"> CV </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="overlay hidden fixed inset-0 bg-black/20 z-10" id="overlay"></div>
+
+<script>
+    import { createIcons, Menu } from "lucide";
+
+    createIcons({
+        icons: {
+            Menu,
+        },
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+
+    const links = document.querySelectorAll(".link");
+
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            menu?.classList.add("hidden");
+            overlay?.classList.add("hidden");
+        });
+    });
+
+    hamburger?.addEventListener("click", () => {
+        menu?.classList.toggle("hidden");
+        overlay?.classList.toggle("hidden");
+    });
+
+    overlay?.addEventListener("click", function () {
+        this.classList.add("hidden");
+        menu?.classList.add("hidden");
+        // hamb.classList.remove("open");
+    });
+</script>
